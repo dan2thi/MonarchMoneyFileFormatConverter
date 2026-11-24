@@ -52,6 +52,10 @@ public class GenericUtil {
                     merchant = "Wayfair";
                 } else if ("Univ of Sk".equalsIgnoreCase(merchant)) {
                     merchant = "University of Saskatchewan";
+                } else if ("TRAVEL INSURANCE SPECI".equalsIgnoreCase(merchant)) {
+                    merchant = "LIC Insurance";
+                } else if ("UberTrip".equalsIgnoreCase(merchant)) {
+                    merchant = "Uber Trip";
                 }
 
                 return merchant;

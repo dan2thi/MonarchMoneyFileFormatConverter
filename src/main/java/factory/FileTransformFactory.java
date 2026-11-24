@@ -4,9 +4,7 @@ import transformers.*;
 import transformers.bankaccounts.BmoBankAccountTransformer;
 import transformers.bankaccounts.EqTransformer;
 import transformers.bankaccounts.TangerineTransformer;
-import transformers.creditcards.BmoCcTransformer;
-import transformers.creditcards.FlexitiTransformer;
-import transformers.creditcards.MbnaTransformer;
+import transformers.creditcards.*;
 
 import javax.swing.*;
 import java.util.List;
@@ -49,6 +47,12 @@ public class FileTransformFactory {
                 break;
             case 10:
                 fileTransformer = new MbnaTransformer("DANUSH - MBNA - Amazon CC");
+                break;
+            case 11:
+                fileTransformer = new RogersCcTransformer("DANUSH - Rogers - Master CC");
+                break;
+            case 12:
+                fileTransformer = new ScotiaCcTransformer("DANUSH - Scotia - Visa CC");
                 break;
             default:
                 fileTransformer = null;

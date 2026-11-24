@@ -97,7 +97,8 @@ public class MbnaTransformer extends AbstractFileTransformer {
 
     @Override
     protected String getDateValue(String[] readingRow) {
-        return GenericUtil.convertToMonarchFormat(readingRow[0], "MM/dd/yyyy");
+//        return GenericUtil.convertToMonarchFormat(readingRow[0], "MM/dd/yyyy");
+        return readingRow[0];
     }
 
 //    private String getDateValue(String date) {
@@ -106,7 +107,7 @@ public class MbnaTransformer extends AbstractFileTransformer {
 
     @Override
     protected String getAmountValue(String[] readingRow) {
-        return GenericUtil.invertAmount(readingRow[3].replace("$", ""));
+        return GenericUtil.invertAmount(readingRow[6]);
     }
 
     @Override

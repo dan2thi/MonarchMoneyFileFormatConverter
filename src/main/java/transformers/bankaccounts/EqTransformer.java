@@ -24,7 +24,7 @@ public class EqTransformer extends AbstractFileTransformer {
         String inputDate = readingRow[0];
         String mm = inputDate.substring(4, 6);
 
-        return GenericUtil.convertToMonarchFormat(inputDate.replace(mm, mm.toLowerCase()), "dd MMM yyyy");
+        return GenericUtil.convertToMonarchFormat(inputDate.replace(mm, mm.toLowerCase()), "yyyy-MM-dd");
     }
 
     @Override

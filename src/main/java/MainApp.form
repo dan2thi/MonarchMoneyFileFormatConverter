@@ -52,7 +52,7 @@
       </hspacer>
       <component id="c19aa" class="javax.swing.JLabel" binding="jlDanBmoCc">
         <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <icon value="img/bmo.png"/>
@@ -315,7 +315,7 @@
       </component>
       <component id="bb826" class="javax.swing.JLabel" binding="jlDanMbnaCc">
         <constraints>
-          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="94" height="28"/>
           </grid>
         </constraints>
@@ -326,7 +326,7 @@
       </component>
       <component id="27b4" class="javax.swing.JTextField" binding="tfDanMbnaCaptured">
         <constraints>
-          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="296" height="30"/>
           </grid>
         </constraints>
@@ -349,6 +349,65 @@
           <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="78" height="28"/>
           </grid>
+        </constraints>
+        <properties>
+          <text value="Select"/>
+        </properties>
+      </component>
+      <component id="6e7dd" class="javax.swing.JLabel" binding="jlDanRogersCc">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="94" height="28"/>
+            <preferred-size width="94" height="28"/>
+          </grid>
+        </constraints>
+        <properties>
+          <icon value="img/rogers.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="3c615" class="javax.swing.JTextField" binding="tfDanRogersCc">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="296" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="ed3df" class="javax.swing.JButton" binding="btnDanRogersCc">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="78" height="28"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Select"/>
+        </properties>
+      </component>
+      <component id="af3fe" class="javax.swing.JLabel" binding="jlDanScotiaCc">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="img/scotia.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="8a743" class="javax.swing.JTextField" binding="tfDanScotiaCc">
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="296" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="ff75f" class="javax.swing.JButton" binding="btnDanScotiaCc">
+        <constraints>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Select"/>

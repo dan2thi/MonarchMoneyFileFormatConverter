@@ -48,6 +48,12 @@ public class MainApp extends JFrame {
     private JTextField tfDanMbnaStmt;
     private JTextField tfDanMbnaCaptured;
     private JButton btnDanMbnaCaptured;
+    private JLabel jlDanRogersCc;
+    private JTextField tfDanRogersCc;
+    private JButton btnDanRogersCc;
+    private JLabel jlDanScotiaCc;
+    private JTextField tfDanScotiaCc;
+    private JButton btnDanScotiaCc;
 
     public static List<JButton> buttons;
     public static List<JTextField> textFields;
@@ -108,9 +114,12 @@ public class MainApp extends JFrame {
         buttons.add(btnDanBmoCc); textFields.add(tfDanBmoCc); // case 8
         buttons.add(btnVarFlexitiCc); textFields.add(tfVarFlexitiCc); // case 9
         buttons.add(btnDanMbnaCaptured); textFields.add(tfDanMbnaCaptured); // case 10
+        buttons.add(btnDanRogersCc); textFields.add(tfDanRogersCc); // case 11
+        buttons.add(btnDanScotiaCc); textFields.add(tfDanScotiaCc); // case 12
     }
 
     private void initMainPanel() {
+        //mainPanel = new JPanel();
         setContentPane(mainPanel);
         setTitle("Monarch Money File Format Converter");
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -137,7 +146,7 @@ public class MainApp extends JFrame {
         FileNameExtensionFilter filter = new FileNameExtensionFilter("CSV files only", "csv");
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setFileFilter(filter);
-        fileChooser.setCurrentDirectory(new File("C:\\Users\\kodithud\\Downloads"));
+        fileChooser.setCurrentDirectory(new File("C:\\DANUSH\\MonarchMoney"));
         int response = fileChooser.showOpenDialog(null);
         if (response == JFileChooser.APPROVE_OPTION) {
             textField.setText(fileChooser.getSelectedFile().getAbsolutePath());
